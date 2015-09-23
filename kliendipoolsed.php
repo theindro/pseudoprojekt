@@ -68,22 +68,26 @@
 
 <!--7. jquery tausta muutmine-->
 <br>
-<input type="button" id="change_background" value="Punane taust" /><br><br>
-<input type="button" id="change_background1" value="Sinine taust" /><br><br>
-<input type="button" id="change_background2" value="Roheline taust" /><br><br>
+<button type="button" id="nupp">red</button><br><br>
+<button type="button" id="change_background1">green</button><br><br>
+<button type="button" id="change_background2">blue</button><br><br>
 
 <script>
-    $( "#change_background" ).on( "click", function() {
-        $("body").first().css("background-color","red");
+    $( "#nupp" ).on( "click", function() {
+        $("body").first().css("background-color", $("#nupp").text());
     });
     $( "#change_background1" ).on( "click", function() {
-        $("body").first().css("background-color","blue");
+        $("body").first().css("background-color",$("#change_background1").text());
     });
     $( "#change_background2" ).on( "click", function() {
-        $("body").first().css("background-color","green");
+        $("body").first().css("background-color",$("#change_background2").text());
     });
 
 </script>
+
+<!--8.test jquery tausta muutmine-->
+<br>
+<br>
 
 
 
