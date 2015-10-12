@@ -4,6 +4,12 @@
 
 $muutuja1 = "Indro";
 $muutuja2 = "Malleus";
+$muutuja3 = 20;
 
-echo $muutuja1." ".$muutuja2;
+echo $muutuja1." ".$muutuja2, " ($muutuja3)";
+
+// 14. Lisada juurde täisarv tüüpi muutuja, milles on sinu vanus ja kuvada ka see nime taga sulgudes. //
+
+
+
 ?>
