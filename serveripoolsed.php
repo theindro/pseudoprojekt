@@ -18,12 +18,28 @@ echo $muutuja1." ".$muutuja2, " ($muutuja3)<br><br>";
 
 $isik = array('Indro', 'Malleus', '(20)');
 
-echo "Kasutan massiivi: $isik[0] $isik[1] $isik[2] <br>";
+echo "Kasutan massiivi: $isik[0] $isik[1] $isik[2] <br><br>";
 
 // 17. Lisada lehele if tingimus, mis kuvab ekraanil "Nimi algab vokaaliga", kui nimi algab vokaaliga //
 
 if ($eesnimi_algab_vokaaliga==true) {
         echo "Nimi algab vokaaliga";
    }
+
+// 18. Refaktoorida massiiv objektiks, milles on lisaks massiivis olnud liikmetele ka atribuut (ehk omadus) sugu,//
+// väärtusega vastavalt kas mees või naine. Instantseerida see objekt ja kuvada selle objekti omadusi esialgses echo reas,
+// mis kuvas nime välja, asendades seal olnud massiivi //
+
+class Isik
+{
+    var $eesnimi = "indro";
+    var $perenimi = "malleus";
+    var $vanus = "20";
+    var $sugu = "mees";
+}
+
+$indro = new Isik;
+
+echo "Kasutan objekti: " . $indro->eesnimi ." ". $indro->perenimi . " " . $indro->vanus;
 
 ?>
