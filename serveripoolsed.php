@@ -30,16 +30,20 @@ if ($eesnimi_algab_vokaaliga==true) {
 // väärtusega vastavalt kas mees või naine. Instantseerida see objekt ja kuvada selle objekti omadusi esialgses echo reas,
 // mis kuvas nime välja, asendades seal olnud massiivi //
 
-class Isik
-{
-    var $eesnimi = "indro";
-    var $perenimi = "malleus";
-    var $vanus = "20";
-    var $sugu = "mees";
+class Isik {
+
+    public $mina = array("ees" => "", "pere" => "", "vanus" => 0, "sugu" => "");
+
+    function Isik($ees, $pere, $vanus, $sugu)
+    {
+        $this->mina["ees"] = $ees;
+        $this->mina["pere"] = $pere;
+        $this->mina["vanus"] = $vanus;
+        $this->mina["sugu"] = $sugu;
+    }
 }
-
-$indro = new Isik;
-
-echo "Kasutan objekti: " . $indro->eesnimi ." ". $indro->perenimi . " " . $indro->vanus;
-
+$inimene = new Isik("Indro", "Malleus", 20, "mees");
+echo "<p>" . $inimene->mina["ees"] . " " . $inimene->mina["pere"] . " (" . $inimene->mina["vanus"] . ")</p>";
 ?>
+
+
