@@ -66,11 +66,14 @@ if ($eesnimi_algab_vokaaliga) {
 $a = 1.23;
 $b = 2.34;
 $float_sum   =  $a + $b;
-echo "1.23 + 2.34 = ".  $float_sum;
-
-
-
+echo "1.23 + 2.34 = ".  $float_sum ."<br>";;
 ?>
 
+<?php
+// 21. kuvada koer=terjer //
+if(isset($_GET['koer'])){
+        echo $_GET['koer']."<br>";
+};
+?>
 
 
