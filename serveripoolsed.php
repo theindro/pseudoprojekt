@@ -78,10 +78,9 @@ if(isset($_GET['koer'])){
 // 22. form input element //
 ?>
 
-<form action="?">
+<form action="?" method="post">
     <input name="kass">
     <input type="submit">
-
 </form>
 
 <?php
