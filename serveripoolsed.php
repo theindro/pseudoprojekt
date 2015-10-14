@@ -60,4 +60,17 @@ if (in_array(substr($inimene->mina["ees"], 0, 1), $vowels)) {
 if ($eesnimi_algab_vokaaliga) {
     echo "<p>Nimi algab vokaaliga</p>";
 }
+
+// 20. php float numbrite liitmine //
+
+$a = 1.23;
+$b = 2.34;
+$float_sum   =  $a + $b;
+echo "1.23 + 2.34 = ".  $float_sum;
+
+
+
 ?>
+
+
+
