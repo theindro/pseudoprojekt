@@ -73,7 +73,18 @@ echo "1.23 + 2.34 = ".  $float_sum ."<br>";;
 // 21. kuvada koer=terjer //
 if(isset($_GET['koer'])){
         echo $_GET['koer']."<br>";
-};
+}
+
+// 22. form input element //
 ?>
 
+<form action="?">
+    <input name="kass">
+    <input type="submit">
 
+</form>
+
+<?php
+if(isset($_POST['kass'])){
+        echo 'Kass oli: '.$_POST['kass'].'<br>';
+} ?>
