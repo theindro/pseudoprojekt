@@ -91,13 +91,43 @@
 <!--9. disable right click menu-->
 <script>
     $(document).ready(function(){
-        $(document).on("contextmenu",function(e){
-            if(e.target.nodeName != "INPUT" && e.target.nodeName != "TEXTAREA")
-                e.preventDefault();
+        $(document).on("contextmenu",function(){
+            return pklick;
+        });
+    })
+</script>
+
+<!--10. allow right click menu-->
+
+<button id="rklick">Luba parem klõps</button>
+<script>
+    var pklick=false;
+        $("#rklick").bind("click",function(){
+               return pklick=true;
+            });
+
+
+</script>
+<br>
+<br>
+<br>
+
+<!--11. peida pilt-->
+<br>
+<div class="lambidiv" style="color: red">test</div>
+<br>
+
+<button class="show_hide" style="background-color:deepskyblue">Show/Hide picture</button>
+<script>
+    $(document).ready(function(){
+        $("#kasskoeraks").hide();
+        $(".show_hide").show();
+
+        $('.show_hide').click(function(){
+            $("#kasskoeraks").slideToggle();
         });
     });
 </script>
-
 
 
 </body>
