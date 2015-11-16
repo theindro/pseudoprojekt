@@ -22,9 +22,15 @@ echo "Kasutan massiivi: $isik[0] $isik[1] $isik[2] <br><br>";
 
 // 17. Lisada lehele if tingimus, mis kuvab ekraanil "Nimi algab vokaaliga", kui nimi algab vokaaliga //
 
-if ($eesnimi_algab_vokaaliga==true) {
-        echo "Nimi algab vokaaliga";
-   }
+if(preg_match( "/^[aeiouõäöü]/i", $eesnimi))     /* 'i' - ei tee vahet suur- ja v'iket'htedel;
+                                                '^' - j'rgnevad t'hed on rea/stringi alguses; */
+     {
+        echo "Eesnimi algab vokaaliga";
+}
+
+else {
+        echo "Eesnimi ei alga vokaaliga";
+}
 
 // 18. Refaktoorida massiiv objektiks, milles on lisaks massiivis olnud liikmetele ka atribuut (ehk omadus) sugu,//
 // väärtusega vastavalt kas mees või naine. Instantseerida see objekt ja kuvada selle objekti omadusi esialgses echo reas,
