@@ -4,7 +4,7 @@
 $muutuja1 = "Indro";
 $muutuja2 = "Malleus";
 $muutuja3 = 20;
-$eesnimi_algab_vokaaliga = false;
+$eesnimi_algab_vokaaliga = true;
 
 echo $muutuja1." ".$muutuja2, " ($muutuja3)<br><br>";
 
